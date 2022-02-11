@@ -1,12 +1,10 @@
 body{
     font-family: "Roboto", Helvetica, Arial, Helvetica, sans-serif;
-    background: #5744c0
 }
 
 .logo{
     max-width: 960px;
     margin: 60px;
-    background: #4737a4;
 }
 
 main {
@@ -26,4 +24,3 @@ form label{
 form input {
     display: block;
 }
-

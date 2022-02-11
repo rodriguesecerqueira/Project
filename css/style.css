@@ -49,9 +49,12 @@ main {
     flex-flow: row wrap;
 }
 
+.checkboxdad{
+    background-color: #0DBDBD;
+}
+
 form{
     display: flex;
-    justify-content: center;
 }
 
 /* FORMS */
@@ -80,11 +83,17 @@ form{
 form label{
     display: flex;
     justify-content: flex-start;
-    font-size: 20px;
+    font-family: "Nunito";
+    font-size: 16px;
+    color: #767676;
 }
 
 form input {
     display: flex;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color:#767676;
     border: 2px solid #AAAAAA;
+    border-radius: 4px;
 }
+

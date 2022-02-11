@@ -1,19 +1,25 @@
-body, h1{
-    margin: 0px;
-    padding: 0px;
+body{
+    display: flex;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #111111;
+    background-color: #e5e5e5;
 }
 
-body{
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    color: #111111
+header{
+    margin: 0px;
+    width: 617px;
+    height: 763px;
+    left: 187px;
+    top: 282px;
+    background: #FFFFFF;
+    border-radius: 20px;
 }
 
 .logo{
     display: flex;
     width: 213px;
     height: 124px;
-    flex-direction: column;
-    padding: 40px;
+    padding: 20px;
 }
 
 h1{
@@ -30,9 +36,40 @@ main {
     margin: 0 auto;
 }
 
+.txt{
+    display: flex;
+    width: 515px;
+    background-color: aquamarine;
+    flex-direction: column;
+    flex-flow: row wrap;
+}
+
 form{
     display: flex;
     justify-content: center;
+}
+
+/* FORMS */
+
+#fullname{
+    flex: 1 0 500px;
+}
+
+#email{
+    flex: 0 0 330px;
+}
+
+#phone{
+    flex: 0 0 164px;
+}
+
+#password{
+    flex: 0 0 330px;
+
+}
+
+#birthday{
+    flex: 0 0 164px;
 }
 
 form label{
@@ -43,4 +80,6 @@ form label{
 
 form input {
     display: flex;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    border: 2px solid #AAAAAA;
 }

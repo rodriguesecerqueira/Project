@@ -15,8 +15,13 @@ header{
     border-radius: 20px;
 }
 
-.logo{
+.logodad{
     display: flex;
+    justify-content: center;
+    padding: 0% 33% 0% 33%;
+}
+
+.logo{
     width: 213px;
     height: 124px;
     padding: 20px;

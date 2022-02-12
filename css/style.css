@@ -7,19 +7,22 @@ body{
     align-items: center;
 }
 
+/*Container*/
+
 .container{
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
     max-width: 617px;
     width: 100%;
     height: 763px;
     background: #fff;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 30px;
 }
 
-.logodad{
+/* Logo */
+
+#logo{
     display: flex;
     justify-content: center;
     padding: 0% 33% 0% 33%;
@@ -31,114 +34,23 @@ body{
     padding: 20px;
 }
 
+/* Title */
+
 h1{
     display: flex;
+    justify-content: center;
     font-weight: 600;
     font-size: 36px;
     line-height: 24px;
-    justify-content: center;
-    margin: 8px 0px;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
+/* Form */
 
 form{
     display: flex;
     flex-wrap: wrap;
-}
-
-.txt{
-    /*background-color: aquamarine;*/
-}
-
-.register{
-    
-}
-
-
-/*ID*/
-
-.fullname{
-    display: flex;
-    flex-wrap: wrap;
-    width: 330px;
-}
-
-.email{
-    display: flex;
-    flex-wrap: wrap;
-    width: 330px;
-}
-
-.phone{
-    display: flex;
-    flex-wrap: wrap;
-    width: 164;
-}
-
-.password{
-    display: flex;
-    flex-wrap: wrap;
-    width: 330px;
-}
-
-.birthday{
-    display: flex;
-    flex-wrap: wrap;
-    width: 164;
-}
-
-.checkbox{
-    padding-top: 120px;
-}
-
-.register{
-    
-}
-
-/* CLASS */
-
-#fullname{
-    width: 500px;
-    flex: 1 0 500px;
-}
-
-#email{
-    width: 330px;
-    flex: 1 0 330px;
-}
-
-#phone{
-    width: 164;
-    flex: 1 0 164px;
-}
-
-#password{
-    width: 330px;
-    flex: 1 0 330px;
-}
-
-#birthday{
-    width: 164;
-    flex: 1 0 164px;
-}
-
-#register{
-    padding: 10px;
-    background-color: #0DBDBD;
-    color: #fff;
-    border-radius: 10px;
-}
-
-form label{
-    flex: 1 1 515px;
-    justify-content: flex-start;
-    font-family: "Nunito";
-    font-size: 16px;
-    color: #767676;
+    align-items: flex-start;
+    height: 450px;
 }
 
 form input {
@@ -150,7 +62,41 @@ form input {
     padding: 5px;
 }
 
-form button{
+/* Form ID items # */
 
+#fullname{
+    max-width: 515px;
+    width: 100%;
 }
 
+#email{
+    max-width: 330px;
+    width: 100%;
+}
+
+#phone{
+    max-width: 164px;
+    width: 100%;
+}
+
+#password{
+    max-width: 330px;
+    width: 100%;
+}
+
+#birthday{
+    max-width: 164px;
+    width: 100%;
+}
+
+#checkbox{
+    max-width: 250px;
+    width: 100%;
+}
+
+#register{
+    max-width: 100px;
+    width: 100%;
+}
+
+/* Form input ID items # */

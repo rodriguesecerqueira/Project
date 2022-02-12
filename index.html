@@ -1,5 +1,6 @@
 <!DOCTYPE html> <!--cuz' im using html5 yo-->
 <html>
+
 <head>
     <title>META</title>
     <meta charset=""utf-8"><!--characters type-->
@@ -7,47 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> <!--google font-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="logodad">
-            <img class="logo" src="img/Logo.png" alt="logo">
+    <div class = "container">
+        <div id = "logo">
+            <img class = "logo" src="img/Logo.png" alt = "logo">
         </div>
+
         <h1>Intern Sign Up</h1>
+
         <form method="post">
-            <div class="fullname">
-                <label id="fullname" for="fullname">Full Name *</label>
-                <input type="text" placeholder="Name" id="fullname">
+            <div id="fullname">
+                <label class ="fullname" for="fullname">Full Name *</label>
+                <input class = "fullnameInput" type = "text" placeholder="Name" id="fullname">
             </div>
 
-            <div class="email">
-                <label id="email" for="email">Email *</label>
-                <input type="text" placeholder="foo@bar.com" id="email">
+            <div id="email">
+                <label class = "email" for="email">Email *</label>
+                <input class = "emailInput" type = "text" placeholder="foo@bar.com" id="email">
             </div>
 
-            <div class="phone">
-                <label id="phone" for="phone">Phone *</label>
-                <input type="text" placeholder="(00) 00000-0000" id="phone">
+            <div id="phone">
+                <label class ="phone" for="phone">Phone *</label>
+                <input class = "phoneInput" type = "text" placeholder="(00) 00000-0000" id="phone">
             </div>
 
-            <div class="password">
-                <label id="password" for="password">Password *</label>
-                <input type="text" placeholder=" " id="password">
+            <div id="password">
+                <label class ="password" for="password">Password *</label>
+                <input class = "passwordInput" type = "text" placeholder=" " id="password">
             </div>
 
-            <div class="birthday">
-                <label id="birthday" for="birthday">Birthday *</label>
-                <input type="text" placeholder="yyyy/mm/dd" id="birthday">
+            <div id="birthday">
+                <label class = "birthday" for="birthday">Birthday *</label>
+                <input class = "birthdayInput" type = "text" placeholder="yyyy/mm/dd" id="birthday">
             </div>
 
-            <div class="checkbox">
-                <input type="checkbox" id="termss" name="terms"checked>
-                <label id="checkbox" for="scales">I accept the terms and privacy</label>
+            <div id="checkbox">
+                <input type = "checkbox" id="termss" name="terms"checked>
+                <label class = "checkboxInput" class = "checkbox" for="scales">I accept the terms and privacy</label>
             </div>
         
-            <div class = "register">
-                <button id= "register"type="submit">Register</button>
+            <div id = "register">
+                <button class = "register" type="submit">Register</button>
             </div>
         </form>
-    </header>
+    </div>
 </body>
+
 </html>

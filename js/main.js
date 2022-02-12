@@ -1,7 +1,14 @@
 var register = document.querySelector(".register");
+const checkbox = document.getElementById("checkbox");
 
-register.addEventListener("click", mostra);
+console.log(checkbox.checked);
 
-function mostra(){
-    console.log("iae doido");
-}
+//register.addEventListener("click", validate);
+
+/*function validate(){
+    if(document.getElementById("checkbox").checked){
+        alert("checked");
+    }else{
+        alert("not checked bruh");
+    }
+}*/

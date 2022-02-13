@@ -1,7 +1,10 @@
 var register = document.querySelector(".register");
-var name = document.querySelector(".register");
+var name = document.querySelector(".fullnameInput");
+var form = document.querySelector("#form");
 
-register.addEventListener("click", validate);
+console.log(form.fullnameInput);
+
+register.addEventListener("click", validate)
 
 function validate(){
     if(document.querySelector(".checkboxInput").checked){
@@ -9,6 +12,6 @@ function validate(){
     }else{
         alert("not checked bruh");
     }
-}
+};
 
-//function namecheck{}
+//function namecheck("name"){}

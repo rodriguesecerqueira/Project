@@ -1,14 +1,14 @@
 var register = document.querySelector(".register");
-const checkbox = document.getElementById("checkbox");
+var name = document.querySelector(".register");
 
-console.log(checkbox.checked);
+register.addEventListener("click", validate);
 
-//register.addEventListener("click", validate);
-
-/*function validate(){
-    if(document.getElementById("checkbox").checked){
+function validate(){
+    if(document.querySelector(".checkboxInput").checked){
         alert("checked");
     }else{
         alert("not checked bruh");
     }
-}*/
+}
+
+//function namecheck{}

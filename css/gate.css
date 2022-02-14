@@ -1,3 +1,7 @@
+body, html{
+    height: 100%;
+}
+
 body{
     display: flex;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -78,4 +82,28 @@ h1{
 
 @media (max-width: 600px){
 
+    body{margin:0px;}
+
+    #goback{
+        width: 100%;
+    }
+    .goback{
+        max-height: 75px;
+        align-items: center;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .container{
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        justify-content: center;
+    }
+
+    .container #goback{
+        height: 0%;
+        padding-top: 85px;
+    }
 }

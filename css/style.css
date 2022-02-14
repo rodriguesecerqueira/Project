@@ -75,6 +75,14 @@ form label{
     padding-bottom: 1%;
 }
 
+/* Date picker*/
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
 /* Form ID items # */
 
 #fullname{

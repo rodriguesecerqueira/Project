@@ -17,9 +17,10 @@ register.addEventListener("click", function(event){
 
     const rgx1 = /^[a-zá-úA-ZÁ-Ú- ]+$/g;
     const rgx2 = /^[a-zA-Z0-9-@.]+$/g;
-    const rgx3 = /^^[0-9]{11}$/g;
+    const rgx3 = /^[0-9]{11}$/g;
+    const rgx4 = /^[0-9]{6,9}$/g;
 
-    if (namevalidate(name, rgx1) == true & emailvalidate(email,rgx2) == true & phonevalidate(phone, rgx3) == true & passvalidate(pass) == true & birthvalidate(birth) == true & cbxvalidate(cbx) == true){
+    if (namevalidate(name, rgx1) == true & emailvalidate(email,rgx2) == true & phonevalidate(phone, rgx3) == true & passvalidate(pass,rgx4) == true & birthvalidate(birth) == true & cbxvalidate(cbx) == true){
         location.href = "gate.html";
     }
 
@@ -69,11 +70,11 @@ function phonevalidate(phone, rgx3){
     }
 }
 
-function passvalidate(pass){
+function passvalidate(pass, rgx4){
 
     var passerror = document.getElementById('passworderror').classList;
 
-    if (pass.value == null || pass.value == 0){
+    if (!pass.value.match(rgx4) || pass.value == 0){
         passerror.add('errormsg-visible');
     }
     

@@ -159,6 +159,15 @@ form label{
     text-decoration: none;
 }
 
+.errormsg{
+    color: tomato;
+    visibility: hidden;
+}
+
+.errormsg-visible{
+    visibility: visible;
+}
+
 /*Checkbox shananigans*/
 
 input[type=checkbox] {

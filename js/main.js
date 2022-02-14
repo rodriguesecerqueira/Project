@@ -1,19 +1,67 @@
-var register = document.querySelector(".register");
-var error = document.querySelector(".errormsg")
+var register = document.querySelector('.register')
+register.addEventListener("click", function(event){
 
-register.addEventListener("click", validate)
+    event.preventDefault();
+
+    var register = document.querySelector(".register")
+    var error = document.querySelector(".errormsg")
+    var name = document.getElementById("fullnamein")
+    var email = document.getElementById("emailin")
+    var phone = document.getElementById("phonein")
+    var pass = document.getElementById("passwordin")
+    var birth = document.getElementById("birthdayin")
+    var cbx = document.getElementById("checkboxin")
 
 
-function validate(){
+    let msg = []
 
-    var form = document.querySelector("#form");
-    var error = validateObj(form);
+    namevalidate(name);
 
     if(error.length > 0){
-        errormessage(error);
+        error.visibility = 'visible';
         return;
     }
+});
+
+function namevalidate(name){
+
+    var nameerror = document.getElementById('fullnameerror').classList;
+
+    if (name.value == "" || name.value == null || name.value.length <= 4 ){
+        nameerror.add('errormsg-visible');
+    }
+    
+    else{
+        nameerror.remove('errormsg-visible');
+    }
 }
+
+function namevalidate(name){
+
+    var nameerror = document.getElementById('fullnameerror').classList;
+
+    if (name.value == "" || name.value == null || name.value.length <= 4){
+        nameerror.add('errormsg-visible');
+    }
+    
+    else{
+        nameerror.remove('errormsg-visible');
+    }
+}
+
+function namevalidate(name){
+
+    var nameerror = document.getElementById('fullnameerror').classList;
+
+    if (name.value == "" || name.value == null || name.value.length <= 4){
+        nameerror.add('errormsg-visible');
+    }
+    
+    else{
+        nameerror.remove('errormsg-visible');
+    }
+}
+
 
 // FUNCTIONS
 

@@ -17,11 +17,11 @@
 
         <h1>Intern Sign Up</h1>
 
-        <form class = "form" id = "form" method="post">
+        <form class = "form" id = "form">
             <div id="fullname">
                 <label class = "fullname" for="fullnamein">Full Name *</label>
                 <input id = "fullnamein" type  = "text" class = "fullnamein" name="fullnamein" placeholder="Name">
-                <span class = "errormsg" > Full Name Invalid </span>
+                <span id = "fullnameerror"class = "errormsg"> Full Name Invalid </span>
             </div>
 
             <div id="email">
@@ -55,7 +55,7 @@
             </div>
         
             <nav id = "register">
-                <button class = "register" type="submit"><a id = "anchor" href="gate.html">Register</a></button>
+                <button class = "register" type="submit"><!--<a id = "anchor" href="gate.html">-->Register<!--</a>--></button>
             </nav>
         </form>
     </div>

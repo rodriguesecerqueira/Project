@@ -31,7 +31,7 @@ function namevalidate(name, rgx1){
 
     var nameerror = document.getElementById('fullnameerror').classList;
 
-    if (name.value.match(rgx1)){ //|| name.value == null || name.value.length <= 4 || name.value == (.math)){
+    if (name.value.match(rgx1)) || name.value == null || name.value.length <= 4){
         nameerror.add('errormsg-visible');
     }
     

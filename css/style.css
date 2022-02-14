@@ -195,6 +195,12 @@ input[type=checkbox] {
         width: 100%;
         border: none;
         border-radius: 0px;
+        justify-content: center;
+    }
+
+    .container #goback{
+        height:auto;
+        margin-top: 10%;
     }
     
     /* LOGO */

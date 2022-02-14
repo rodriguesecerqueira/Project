@@ -142,6 +142,7 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{
 
 #checkbox span{
     margin-right: 100px;
+    margin-bottom: 5px;;
     flex-grow: 1;
     align-self: flex-start;
 } 

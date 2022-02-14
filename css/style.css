@@ -145,10 +145,6 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{
 
 /* Form class items . */
 
-.fullname{
-    //padding-bottom: 1%;
-}
-
 .register{
     padding: 11px;
     border: none;

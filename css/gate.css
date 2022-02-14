@@ -18,6 +18,11 @@ body{
     height: 763px;
     background: #fff;
     border-radius: 20px;
+    align-items: center;
+}
+
+.container #goback{
+    height: 100%;
 }
 
 /* Logo */
@@ -42,14 +47,12 @@ h1{
     line-height: 24px;
 }
 
-nav{
-    display: flex;
-}
-
 /* ID items */
 
 #goback{
-    height: 100%;
+    align-items: center;
+    width: 270px;
+    height: 180px;
     display: flex;
 }
 
@@ -63,7 +66,7 @@ nav{
 /* Class items */
 
 .goback{
-    max-width: 600px;
+    height: 180px;
     width: 100%;
     border-radius: 10px;
     border: none;
@@ -74,5 +77,5 @@ nav{
 /* Media */
 
 @media (max-width: 600px){
-    
+
 }

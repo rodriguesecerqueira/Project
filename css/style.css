@@ -32,8 +32,8 @@ body{
 }
 
 .logo{
-    width: 213px;
-    height: 124px;
+    max-width: 213px;
+    max-height: 124px;
     padding: 20px;
 }
 

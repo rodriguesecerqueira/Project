@@ -154,16 +154,7 @@ form input {
     text-decoration: none;
 }
 
-/* Inputs */
 /*Checkbox shananigans*/
-
-.checkbox input {
-    display: none;
-}
-
-.checkbox input:checked + span {
-    background-color: #0DBDBD;
-}
 
 input[type=checkbox] {
     transform: scale(1.5);

@@ -135,11 +135,6 @@ form label{
     flex-direction: column; 
 }
 
-#register{
-    display: flex; 
-    flex-direction: column;
-}
-
 /* Form class items . */
 
 .fullname{

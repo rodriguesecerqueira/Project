@@ -3,7 +3,7 @@ register.addEventListener("click", function(event){
 
     event.preventDefault();
 
-    var register = document.querySelector(".register")
+    //var register = document.querySelector(".register")
     var error = document.querySelector(".errormsg")
     var name = document.getElementById("fullnamein")
     var email = document.getElementById("emailin")
@@ -13,9 +13,11 @@ register.addEventListener("click", function(event){
     var cbx = document.getElementById("checkboxin")
 
 
-    let msg = []
+    //let msg = []
 
-    namevalidate(name);
+    if (namevalidate(name) == true & emailvalidate(email) == true & phonevalidate(phone) == true & passvalidate(pass) == true & birthvalidate(birth) == true & cbxvalidate(cbx) == true){
+        location.href = "gate.html";
+    }
 
     if(error.length > 0){
         error.visibility = 'visible';
@@ -27,49 +29,83 @@ function namevalidate(name){
 
     var nameerror = document.getElementById('fullnameerror').classList;
 
-    if (name.value == "" || name.value == null || name.value.length <= 4 ){
+    if (name.value == " " || name.value == null || name.value.length <= 4 ){
         nameerror.add('errormsg-visible');
     }
     
     else{
         nameerror.remove('errormsg-visible');
+        return true;
     }
 }
 
-function namevalidate(name){
+function emailvalidate(email){
 
-    var nameerror = document.getElementById('fullnameerror').classList;
+    var emailerror = document.getElementById('emailerror').classList;
 
-    if (name.value == "" || name.value == null || name.value.length <= 4){
-        nameerror.add('errormsg-visible');
+    if (email.value == null || email.value == 0){
+        emailerror.add('errormsg-visible');
     }
     
     else{
-        nameerror.remove('errormsg-visible');
+        emailerror.remove('errormsg-visible');
+        return true;
     }
 }
 
-function namevalidate(name){
+function phonevalidate(phone){
 
-    var nameerror = document.getElementById('fullnameerror').classList;
+    var phoneerror = document.getElementById('phoneerror').classList;
 
-    if (name.value == "" || name.value == null || name.value.length <= 4){
-        nameerror.add('errormsg-visible');
+    if (phone.value == null || phone.value == 0){
+        phoneerror.add('errormsg-visible');
     }
     
     else{
-        nameerror.remove('errormsg-visible');
+        phoneerror.remove('errormsg-visible');
+        return true;
     }
 }
 
+function passvalidate(pass){
 
-// FUNCTIONS
+    var passerror = document.getElementById('passworderror').classList;
 
-/*function validate(){
-    var form = document.getElementById('form');
-    if(document.getElementById("checkboxin").checked){
-        alert(form.fullnamein.value);
-    }else{
-        alert("not checked bruh");
+    if (pass.value == null || pass.value == 0){
+        passerror.add('errormsg-visible');
     }
-};*/
+    
+    else{
+        passerror.remove('errormsg-visible');
+        return true;
+    }
+}
+
+function birthvalidate(birth){
+
+    var birtherror = document.getElementById('birthdayerror').classList;
+
+    if (birth.value == null || birth.value == 0){
+        birtherror.add('errormsg-visible');
+    }
+    
+    else{
+        birtherror.remove('errormsg-visible');
+        return true;
+    }
+}
+
+function cbxvalidate(cbx){
+
+    var cbxerror = document.getElementById('checkboxerror').classList;
+
+    if (cbx.checked == false){
+        cbxerror.add('errormsg-visible');
+    }
+    
+    else{
+        cbxerror.remove('errormsg-visible');
+        return true;
+    }
+}
+

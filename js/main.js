@@ -15,7 +15,7 @@ register.addEventListener("click", function(event){
 
     //let msg = []
 
-    const rgx1 = /^[a-zA-Z]+\s[a-zA-Z]$/;
+    const rgx1 = /[a-zA-Z- ]/g;
     const rgx2 = /[a-z0-9.@]/;
 
     if (namevalidate(name, rgx1) == true & emailvalidate(email) == true & phonevalidate(phone) == true & passvalidate(pass) == true & birthvalidate(birth) == true & cbxvalidate(cbx) == true){
@@ -31,8 +31,10 @@ register.addEventListener("click", function(event){
 function namevalidate(name, rgx1){
 
     var nameerror = document.getElementById('fullnameerror').classList;
-    
-    if (!name.value.match(rgx1) || name.value == null || name.value.length <= 4){
+    alert(name.value.match(rgx1)); 
+
+
+    if (!name.value.match(rgx1) || name.value.length <= 4){
         nameerror.add('errormsg-visible');
     }
     

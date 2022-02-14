@@ -17,8 +17,9 @@ register.addEventListener("click", function(event){
 
     const rgx1 = /^[a-zá-úA-ZÁ-Ú- ]+$/g;
     const rgx2 = /^[a-zA-Z0-9-@.]+$/g;
+    const rgx3 = /^^[0-9]{11}$/g;
 
-    if (namevalidate(name, rgx1) == true & emailvalidate(email,rgx2) == true & phonevalidate(phone) == true & passvalidate(pass) == true & birthvalidate(birth) == true & cbxvalidate(cbx) == true){
+    if (namevalidate(name, rgx1) == true & emailvalidate(email,rgx2) == true & phonevalidate(phone, rgx3) == true & passvalidate(pass) == true & birthvalidate(birth) == true & cbxvalidate(cbx) == true){
         location.href = "gate.html";
     }
 
@@ -55,11 +56,10 @@ function emailvalidate(email, rgx2){
     }
 }
 
-function phonevalidate(phone){
+function phonevalidate(phone, rgx3){
 
     var phoneerror = document.getElementById('phoneerror').classList;
-
-    if (phone.value == null || phone.value == 0){
+    if (!phone.value.match(rgx3) || phone.value == 0){
         phoneerror.add('errormsg-visible');
     }
     

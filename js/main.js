@@ -15,7 +15,9 @@ register.addEventListener("click", function(event){
 
     //let msg = []
 
-    if (namevalidate(name) == true & emailvalidate(email) == true & phonevalidate(phone) == true & passvalidate(pass) == true & birthvalidate(birth) == true & cbxvalidate(cbx) == true){
+    const rgx1 = /^[a-zA-Z]+\s[a-zA-Z]/;
+
+    if (namevalidate(name, rgx1) == true & emailvalidate(email) == true & phonevalidate(phone) == true & passvalidate(pass) == true & birthvalidate(birth) == true & cbxvalidate(cbx) == true){
         location.href = "gate.html";
     }
 
@@ -25,11 +27,11 @@ register.addEventListener("click", function(event){
     }
 });
 
-function namevalidate(name){
+function namevalidate(name, rgx1){
 
     var nameerror = document.getElementById('fullnameerror').classList;
 
-    if (name.value == " " || name.value == null || name.value.length <= 4 ){
+    if (name.value.match(rgx1)){ //|| name.value == null || name.value.length <= 4 || name.value == (.math)){
         nameerror.add('errormsg-visible');
     }
     

@@ -171,7 +171,8 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{
     background-color: #0DBDBD;
 }
 
-.register a{
+.register{
+    cursor: pointer;
     font-size: 16px;;
     color:#fff;
     text-decoration: none;

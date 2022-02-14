@@ -12,7 +12,9 @@ register.addEventListener("click", validate)
 };*/
 
 function validate(){
+
     var form = document.getElementById('form');
+    
     if(namecheck() = true){
         alert(form.fullnamein.value);
     }else{

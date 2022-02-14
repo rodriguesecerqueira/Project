@@ -3,6 +3,7 @@ html, body {
 }
 
 body{
+    margin: 0px;
     display: flex;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     color: #111111;
@@ -165,6 +166,13 @@ input[type=checkbox] {
 
 @media (max-width: 600px){
 
+    .container{
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+    }
+    
     /* LOGO */
 
     #logo{

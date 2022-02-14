@@ -130,10 +130,24 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{
     align-self: center;
     display: flex; 
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
+#checkbox label{
+    padding: 0px;
+    flex-grow: 1;
+}
+
+#checkbox span{
+    margin-right: 100px;
+    flex-grow: 1;
+    align-self: flex-start;
+} 
+
 #register{
-    align-self: center;
+    align-self: flex-end;
     display: flex; 
     flex-direction: column;
 }
@@ -141,6 +155,11 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper{
 #password{
     display: flex; 
     flex-direction: column; 
+}
+
+#birthdayin{
+    padding: 3.1px;
+    font-size: 16px;
 }
 
 /* Form class items . */
@@ -250,8 +269,8 @@ input[type=checkbox] {
 
     #birthdayin{
         font-size: 13px;
-        padding-top: 7.5px;
-        padding-bottom: 7.5px;
+        padding-top: 5.6px;
+        padding-bottom: 5.6px;
     }
     /* FORM CLASS */
 

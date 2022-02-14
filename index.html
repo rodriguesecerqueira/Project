@@ -19,42 +19,43 @@
 
         <form class = "form" id = "form" method="post">
             <div id="fullname">
-                <label class = "fullname" for="fullname">Full Name *</label>
-                <input class = "fullnameInput" name="fullnameInput" type = "text" placeholder="Name" id="fullname">
+                <label class = "fullname" for="fullnamein">Full Name *</label>
+                <input id = "fullnamein" type  = "text" class = "fullnamein" name="fullnamein" placeholder="Name">
             </div>
 
             <div id="email">
-                <label class = "email" for="email">Email *</label>
-                <input class = "emailInput" type = "text" placeholder="foo@bar.com" id="email">
+                <label class = "email" for="emailin">Email *</label>
+                <input id = "emailin" type = "text" placeholder="foo@bar.com">
             </div>
 
             <div id="phone">
-                <label class = "phone" for="phone">Phone *</label>
-                <input class = "phoneInput" type = "text" placeholder="(00) 00000-0000" id="phone">
+                <label class = "phone" for="phonein">Phone *</label>
+                <input id = "phonein" type = "text" placeholder="(00) 00000-0000">
             </div>
 
             <div id="password">
-                <label class = "password" for="password">Password *</label>
-                <input class = "passwordInput" type = "text" placeholder=" " id="password">
+                <label class = "password" for="passwordin">Password *</label>
+                <input id = "passwordin" type = "text" placeholder=" ">
             </div>
 
             <div id="birthday">
-                <label class = "birthday" for="birthday">Birthday *</label>
-                <input class = "birthdayInput" type = "text" placeholder="yyyy/mm/dd" id="birthday">
+                <label class = "birthday" for="birthdayin">Birthday *</label>
+                <input id = "birthdayin" type = "text" placeholder="yyyy/mm/dd">
             </div>
 
             <div id="checkbox">
-                <input class = "checkboxInput" type = "checkbox" id="termss" name="terms"checked>
-                <label class = "checkbox" for="scales">I accept the terms and privacy</label>
+                <input id = "checkboxin" type = "checkbox" name="terms"checked>
+                <label class = "checkbox" for="checkboxin">I accept the terms and privacy</label>
             </div>
         
             <nav id = "register">
-                <button class = "register" type="submit"><a href="gate.html">Register</a></button>
+                <button class = "register" type="submit"><a id = "anchor" href="gate.html">Register</a></button>
             </nav>
         </form>
     </div>
     
     <script src="js/main.js" ></script>
+        
 </body>
 
 </html>

@@ -1,8 +1,6 @@
 var register = document.querySelector(".register");
+var fullname = document.getElementById('fullname');
 var name = document.querySelector(".fullnameInput");
-var form = document.querySelector("#form");
-
-console.log(form.fullnameInput);
 
 register.addEventListener("click", validate)
 
@@ -14,4 +12,18 @@ function validate(){
     }
 };
 
+
+var form = document.getElementById('form');
+var teste = document.querySelector('.fullnameInput');
+
+form.addEventListener('submit', function(e) {
+    // alerta o valor do campo
+    alert(teste.value);
+
+    // impede o envio do form
+    e.preventDefault();
+});
+
 //function namecheck("name"){}
+
+// FUNCTIONS

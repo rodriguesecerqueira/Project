@@ -68,45 +68,55 @@ form input {
 /* Form ID items # */
 
 #fullname{
-    display: flex;
     width: 100%;
-    margin-right: 2.8%;
+    display: flex; 
     flex-direction: column;
 }
 
 #email{
-    margin-right: 2.8%;
-    max-width: 300px;
-    width: 100%;
+    width: 55%;
+    display: flex; 
+    flex-direction: column;
 }
 
 #phone{
-    margin-right: 2.8%;
-    max-width: 164px;
-    width: 100%;
+    width: 40%;
+    display: flex; 
+    flex-direction: column;
 }
 
 #password{
-    margin-right: 2.8%;
-    max-width: 300px;
-    width: 100%;
+    width: 55%;
+    display: flex; 
+    flex-direction: column;
 }
 
 #birthday{
-    margin-right: 2.8%;
-    max-width: 164px;
-    width: 100%;
+    width: 40%;
+    display: flex; 
+    flex-direction: column;
 }
 
 #checkbox{
     align-self: center;
-    max-width: 250px;
-    width: 100%;
+    display: flex; 
+    flex-direction: row;
 }
 
 #register{
-    display: flex;
     align-self: center;
+    display: flex; 
+    flex-direction: column;
+}
+
+#password{
+    display: flex; 
+    flex-direction: column; 
+}
+
+#register{
+    display: flex; 
+    flex-direction: column;
 }
 
 /* Form class items . */
@@ -116,7 +126,7 @@ form input {
 }
 
 .register{
-    padding: 12px;
+    padding: 11px;
     border: none;
     border-radius: 10px;
     background-color: #0DBDBD;
@@ -125,22 +135,6 @@ form input {
 .register a{
     color:#fff;
     text-decoration: none;
-}
-
-
-/* Form input ID items # */
-
-#fullnameInput{
-    //width: 100%;
-}
-
-#emailInput{
-    //margin: 10px;
-    //flex-shrink: 1;
-}
-
-#phoneInput{
-    //flex-grow: 2;
 }
 
 /* MEDIA */
@@ -158,29 +152,28 @@ form input {
     #fullname{order: 1;}
     
     #email{
-        max-width: 601px;
         width: 100%;
         order: 2;
     }
 
     #password{
-        margin-right: 2.8%;
-        max-width: 601px;
         width: 100%;
         order: 3;
     }
 
     #birthday{
-        margin-right: 5%;
+        width: 47.5%;
         order: 4;
     }
 
-    #phone{order: 5;}
+    #phone{
+        width: 47.5%;
+        order: 5;
+    }
 
     #checkbox{order: 6;}
 
     #register{
-        justify-content: center;
         width: 100%;
         order: 7;
     }
@@ -188,6 +181,7 @@ form input {
     /* FORM CLASS */
 
     .register{
-        padding: 5% 43% 5% 43%;
+        align-items: center;
+        padding: 15px;
     }
 }
